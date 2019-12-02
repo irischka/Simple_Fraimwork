@@ -1,7 +1,7 @@
 from selenium.webdriver.common.keys import Keys
 
 
-class MyWebElement:
+class WebElement:
 
     def __init__(self, element):
         self.element = element
