@@ -3,8 +3,7 @@ from selenium.webdriver.common.keys import Keys
 
 class WebElement(object):
 
-    def __init__(self, driver, element):
-        self.driver = driver
+    def __init__(self, element):
         self.element = element
 
     def click(self):
