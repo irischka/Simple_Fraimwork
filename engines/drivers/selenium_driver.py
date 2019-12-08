@@ -2,6 +2,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 from engines.elements.web_element import WebElement
+from page_objects.locators.login_locators import *
 
 
 class SeleniumDriver:
@@ -37,4 +38,6 @@ class SeleniumDriver:
         """ Maximize the browser window """
         self.driver.maximize_window()
 
-
+    def frame_switch(self):
+        # return self.driver.switch_to.frame(self.driver.find_element(By.CSS_SELECTOR,'#'+frame_login[1]))
+        return self.driver.switch_to.frame(self.driver.find_element(By.CSS_SELECTOR, "#login-frame-wraper > iframe"))

@@ -16,6 +16,7 @@ class WebElement:
 
     def input(self, text):
         """ Set value for given string """
+        self.element.clear()
         self.element.send_keys(text)
 
     def value(self) -> str:
