@@ -25,3 +25,5 @@ class SearchPage:
     def get_text_search_button(self):
         input_field = self.driver.find_element(search_button)
         return input_field.value()
+
+

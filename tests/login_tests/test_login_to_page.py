@@ -9,5 +9,5 @@ def test_login_to_the_ukr_net_page_with_wrong_credentials(browser):
     login_page.submit_button()
     login_page.fill_password(password="password")
     login_page.submit_button()
-    text = login_page.get_text()
+    text = login_page.get_text_alert_message()
     assert text == EXPECTED_ALERT_MESSAGE

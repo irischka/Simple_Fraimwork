@@ -38,6 +38,7 @@ class SeleniumDriver:
         """ Maximize the browser window """
         self.driver.maximize_window()
 
-    def frame_switch(self):
+    def frame_switch(self, parameter):
         # return self.driver.switch_to.frame(self.driver.find_element(By.CSS_SELECTOR,'#'+frame_login[1]))
-        return self.driver.switch_to.frame(self.driver.find_element(By.CSS_SELECTOR, "#login-frame-wraper > iframe"))
+        # return self.driver.switch_to.frame(self.driver.find_element(By.CSS_SELECTOR, "#login-frame-wraper > iframe"))
+        return self.driver.switch_to.frame(parameter)
