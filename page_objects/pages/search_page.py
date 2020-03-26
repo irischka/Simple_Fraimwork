@@ -7,23 +7,23 @@ class SearchPage:
         self.driver = driver
 
     def enter_query(self, world):
-        input_field = self.driver.find_element(search_input)
+        input_field = self.driver.find_element(SEARCH_INPUT)
         input_field.clear()
         input_field.input(world)
 
     def submit_query(self):
-        button = self.driver.find_element(search_button)
+        button = self.driver.find_element(SEARCH_BUTTON)
         button.click()
 
     def get_text_query(self):
-        input_field = self.driver.find_element(search_input)
+        input_field = self.driver.find_element(SEARCH_INPUT)
         return input_field.value()
 
     def get_page_title(self):
         return self.get_page_title()
 
     def get_text_search_button(self):
-        input_field = self.driver.find_element(search_button)
+        input_field = self.driver.find_element(SEARCH_BUTTON)
         return input_field.value()
 
 

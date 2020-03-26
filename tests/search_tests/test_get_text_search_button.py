@@ -6,4 +6,3 @@ def test_get_text_search_button(browser):
     search_page = SearchPage(browser)
     button = search_page.get_text_search_button()
     assert button == "Пошук"
-

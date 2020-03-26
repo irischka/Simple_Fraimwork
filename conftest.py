@@ -6,7 +6,8 @@ from engines.drivers.selenium_driver import SeleniumDriver
 
 @pytest.fixture(scope="function")
 def browser():
-    driver = SeleniumDriver(webdriver.Chrome(executable_path=ChromeDriverManager().install()))
+    # driver = SeleniumDriver(webdriver.Chrome(executable_path=ChromeDriverManager().install()))
+    driver = SeleniumDriver(webdriver.Chrome())
     driver.go_to_page()
 
     yield driver
